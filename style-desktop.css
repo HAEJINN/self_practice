@@ -1,0 +1,226 @@
+/* >=768px (Desktop) */
+@media screen and (min-width: 768px) {
+  /* Reset CSS */
+  p {
+    font-size: 22px;
+    line-height: 1.3636363636;
+  }
+
+  /* Landing */
+  .landing-content {
+    height: auto;
+    padding: 120px 0;
+  }
+
+  .landing-title {
+    font-size: 70px;
+    line-height: 1.028571428571429;
+    margin-bottom: 32px;
+  }
+
+  .fill-button {
+    width: 160px;
+    height: 56px;
+    font-size: 18px;
+    line-height: 1.555555555555556;
+  }
+
+  .landing-desc {
+    margin-bottom: 32px;
+  }
+
+  .landing .button-group .fill-button:first-child {
+    margin-right: 16px;
+  }
+
+  /* Service */
+  .service-content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .service-01 {
+    margin-bottom: auto;
+    margin-right: 110px;
+  }
+
+  .service-title {
+    font-size: 26px;
+    line-height: 1.307692307692308;
+    margin-bottom: 16px;
+  }
+
+  .service-desc {
+    line-height: 1.454545454545455;
+  }
+
+  /* Program */
+  .program-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 96px;
+  }
+
+  .image-set {
+    flex-direction: row;
+  }
+
+  .program-name {
+    font-size: 22px;
+    line-height: 1.090909090909091;
+    margin-bottom: 16px;
+  }
+
+  .program-title {
+    font-size: 56px;
+    line-height: 1;
+    margin-bottom: 32px;
+  }
+
+  .program-content p {
+    font-size: 22px;
+    line-height: 1.454545454545455;
+    margin-bottom: 72px;
+  }
+
+  .program-img {
+    margin-right: 30px;
+    margin-bottom: auto;
+    height: 299px;
+  }
+
+  .program-img:last-child {
+    margin-right: auto;
+  }
+
+  /* Curriculum */
+  .curriculum-content {
+    padding: 80px 0 96px 0;
+  }
+
+  .cur-row {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .cur-row div:first-child {
+    margin-right: 30px;
+  }
+
+  .cur-img {
+    display: block;
+    width: 450px;
+    height: 450px;
+  }
+  .curriculum-name {
+    font-size: 22px;
+    line-height: 1.090909090909091;
+    margin-bottom: 16px;
+  }
+
+  .curriculum-title {
+    font-size: 56px;
+    line-height: 1;
+    margin-bottom: 32px;
+  }
+
+  .curriculum-content p {
+    line-height: 1.454545454545455;
+    margin-bottom: 72px;
+  }
+
+  .cur-desc {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 1.444444444444444;
+  }
+
+  .cur-desc div {
+    width: 450px;
+    height: 78px;
+  }
+
+  .cur-desc div:first-child {
+    margin-right: 30px;
+    margin-bottom: auto;
+  }
+
+  .cur-row .fill-button {
+    margin-bottom: 66px;
+  }
+
+  /* Subscription */
+  .subscription-content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0px;
+  }
+
+  .subscription-content img {
+    width: 370px;
+    height: 300px;
+    margin-bottom: auto;
+    margin-right: 30px;
+    padding: 8px 83px 7px 0;
+    opacity: 0.3;
+  }
+
+  .subscription-title {
+    text-align: left;
+    font-size: 40px;
+    line-height: 1;
+  }
+
+  .subscription-desc {
+    text-align: left;
+    font-size: 22px;
+    line-height: 1.454545454545455;
+  }
+
+  .subscription-form {
+    flex-direction: row;
+    margin-bottom: 4px;
+  }
+
+  .subscription-form input {
+    width: 362px;
+    font-size: 18px;
+    line-height: 1.333333333333333;
+    padding: 16px 214px 16px 16px;
+    margin-right: 8px;
+    margin-bottom: 0;
+  }
+
+  .subscription-form button {
+    width: 160px;
+    padding: 15px 28px;
+    line-height: 1.333333333333333;
+    margin-bottom: 0;
+  }
+
+  .form-text {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.714285714285714;
+  }
+
+  /* Footer */
+  .footer-content {
+    flex-direction: row;
+    padding: 16px 0;
+  }
+
+  .footer-content a {
+    margin-bottom: auto;
+    margin-right: 16px;
+  }
+
+  .footer-content a:last-child {
+    margin-right: 0;
+  }
+}
