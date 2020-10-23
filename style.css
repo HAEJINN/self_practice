@@ -82,7 +82,7 @@ body {
   margin-bottom: 18px;
 }
 
-.header-btn {
+.start-btn {
   display: inline-block;
   font-size: 10px;
   font-weight: 600;
@@ -92,7 +92,7 @@ body {
   padding: 10px;
 }
 
-.header-btn::after {
+.start-btn::after {
   content: "";
   display: inline-block;
   background-image: url(assets/arrow.png);
@@ -104,16 +104,16 @@ body {
   margin: 0 5px;
 }
 
-.header-btn:hover {
+.start-btn:hover {
   border-color: #1abc9c;
   color: #1abc9c;
 }
 
-.header-btn:hover::after {
+.start-btn:hover::after {
   background-image: url(assets/arrow-hover.png);
 }
 
-/* Main */
+/* Main-01 */
 
 .one {
   position: relative;
@@ -261,14 +261,14 @@ body {
   padding: 80px 15px;
 }
 
-.main-title {
+.main-01-title {
   font-size: 18px;
   color: #ffffff;
   line-height: 1.2;
   z-index: 10;
 }
 
-.main-title::after {
+.main-01-title::after {
   content: "";
   display: block;
   width: 50%;
@@ -277,12 +277,43 @@ body {
   margin: 12px 0;
 }
 
-.main-desc {
+.main-01-desc {
   font-size: 10px;
   line-height: 1.2;
   letter-spacing: 0.2em;
   color: #ffffff;
   z-index: 10;
+}
+
+/* Main-02 */
+.main-content-02 {
+  background-color: #4b475c;
+  height: 95vh;
+  padding: 70px 20px;
+  color: #ffffff;
+}
+
+.main-02-title {
+  font-size: 20px;
+  line-height: 1.2;
+  width: 40%;
+  margin: 0;
+}
+
+.main-02-title::after {
+  content: "";
+  display: block;
+  background-color: #ffffff;
+  height: 2px;
+  margin: 12px 0 30px 0;
+}
+
+.main-02-desc {
+  font-size: 15px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  font-weight: 300;
+  margin-bottom: 30px;
 }
 
 /* Tablet CSS */
@@ -311,18 +342,18 @@ body {
     margin-right: 12px;
   }
 
-  .header-btn {
-    font-size: 11px;
+  .start-btn {
+    font-size: 13px;
     padding: 15px;
   }
 
-  /* Main */
-  .main-content {
+  /* Main-01 */
+  .main-content-01 {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .main-content article {
+  .main-content-01 article {
     width: 50%;
   }
 
@@ -331,16 +362,35 @@ body {
     padding-left: 45px;
   }
 
-  .main-title {
+  .main-01-title {
     font-size: 24px;
   }
 
-  .main-title::after {
+  .main-01-title::after {
     height: 2px;
   }
 
-  .main-desc {
+  .main-01-desc {
     letter-spacing: 0.3em;
+  }
+
+  /* Main-02 */
+  .main-content-02 {
+    height: 45vh;
+    padding: 80px 45px;
+  }
+
+  .main-02-title {
+    width: 160px;
+    font-size: 28px;
+  }
+
+  .main-02-title::after {
+    margin-top: 15px;
+  }
+
+  .main-02-desc {
+    font-size: 16px;
   }
 }
 
@@ -361,15 +411,21 @@ body {
     width: 400px;
   }
 
-  .main-content article:nth-child(1),
-  .main-content article:nth-child(4),
-  .main-content article:nth-child(5) {
+  .start-btn {
+    font-size: 15px;
+    padding: 16px;
+  }
+
+  /* Main-01 */
+  .main-content-01 article:nth-child(1),
+  .main-content-01 article:nth-child(4),
+  .main-content-01 article:nth-child(5) {
     width: 40%;
   }
 
-  .main-content article:nth-child(2),
-  .main-content article:nth-child(3),
-  .main-content article:nth-child(6) {
+  .main-content-01 article:nth-child(2),
+  .main-content-01 article:nth-child(3),
+  .main-content-01 article:nth-child(6) {
     width: 60%;
   }
 
@@ -378,11 +434,25 @@ body {
     padding-left: 60px;
   }
 
-  .main-title {
+  .main-01-title {
     font-size: 26px;
   }
 
-  .main-desc {
+  .main-01-desc {
     font-size: 13px;
+  }
+
+  /* Main-02 */
+  .main-content-02 {
+    padding: 80px 60px;
+  }
+
+  .main-02-title {
+    width: 190px;
+    font-size: 32px;
+  }
+
+  .main-02-desc {
+    font-size: 18px;
   }
 }
