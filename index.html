@@ -78,34 +78,48 @@
     <section clsas="contact">
       <!-- <h3>CONTACT</h3> -->
       <div class="contact-content">
-        <div class="form-content">
-          <form>
-            <label for="user-name">NAME</label>
-            <input id="user-name" type="text" />
-            <label for="user-email">EMAIL</label>
-            <input id="user-email" type="email" />
-            <label for="user-message">MESSAGE</label>
-            <textarea id="user-message"></textarea>
-            <button type="submit">SEND MESSAGE</button>
-            <button type="reset">CLEAR</button>
-          </form>
-        </div>
-        <div class="email-desc">
-          <h3>Email</h3>
-          <a href="#">information@untitled.tld</a>
-        </div>
-        <div class="phone-desc">
-          <h3>Phone</h3>
-          <span>(000) 000-0000 x12387</span>
-        </div>
-        <div class="address-desc">
-          <h3>Address</h3>
-          <p>
-            1234 Somewhere Road #5432<br />
-            Nashville, TN 00000<br />
-            United States of America
-          </p>
-        </div>
+        <form class="form-content">
+          <label for="user-name">NAME</label>
+          <input id="user-name" type="text" />
+          <label for="user-email">EMAIL</label>
+          <input id="user-email" type="email" />
+          <label for="user-message">MESSAGE</label>
+          <textarea id="user-message" rows="6"></textarea>
+          <div>
+            <button type="submit" class="submit-btn">SEND MESSAGE</button>
+            <button type="reset" class="reset-btn">CLEAR</button>
+          </div>
+        </form>
+      </div>
+      <div class="contact-card">
+        <section>
+          <div class="email-desc">
+            <div class="email-wrap">
+              <h3>Email</h3>
+              <a href="#">information@untitled.tld</a>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="phone-desc">
+            <div class="phone-wrap">
+              <h3>Phone</h3>
+              <span>(000) 000-0000 x12387</span>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="address-desc">
+            <div class="address-wrap">
+              <h3>Address</h3>
+              <p>
+                1234 Somewhere Road #5432<br />
+                Nashville, TN 00000<br />
+                United States of America
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
     </section>
     <footer class="footer">
