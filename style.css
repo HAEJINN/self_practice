@@ -643,4 +643,76 @@ body {
   .main-02-desc {
     font-size: 18px;
   }
+
+  /* Contact */
+  .inner {
+    display: flex;
+  }
+
+  .contact-content {
+    width: 60%;
+    padding: 70px 50px 80px 60px;
+  }
+
+  .name-part,
+  .email-part,
+  .textarea-part {
+    padding: 15px;
+  }
+
+  .form-content {
+    font-size: 16px;
+  }
+
+  .form-content input,
+  .form-content textarea {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .form-content input {
+    height: 3.2em;
+  }
+
+  .form-content button {
+    margin-left: 10px;
+  }
+
+  .submit-btn {
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .reset-btn {
+    width: 120px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .contact-card {
+    width: 40%;
+  }
+
+  .contact-content {
+    border-right: dotted 1px rgba(212, 212, 255, 0.1);
+  }
+
+  .email-desc,
+  .phone-desc,
+  .address-desc {
+    padding: 60px;
+  }
+
+  .contact-card h3 {
+    font-size: 23px;
+  }
+
+  .contact-card a,
+  .contact-card span,
+  .contact-card p {
+    font-size: 19px;
+  }
 }
