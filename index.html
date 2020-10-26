@@ -79,12 +79,18 @@
       <!-- <h3>CONTACT</h3> -->
       <div class="contact-content">
         <form class="form-content">
-          <label for="user-name">NAME</label>
-          <input id="user-name" type="text" />
-          <label for="user-email">EMAIL</label>
-          <input id="user-email" type="email" />
-          <label for="user-message">MESSAGE</label>
-          <textarea id="user-message" rows="6"></textarea>
+          <div class="name-part">
+            <label for="user-name">NAME</label>
+            <input id="user-name" type="text" />
+          </div>
+          <div class="email-part">
+            <label for="user-email">EMAIL</label>
+            <input id="user-email" type="email" />
+          </div>
+          <div class="textarea-part">
+            <label for="user-message">MESSAGE</label>
+            <textarea id="user-message" rows="6"></textarea>
+          </div>
           <div>
             <button type="submit" class="submit-btn">SEND MESSAGE</button>
             <button type="reset" class="reset-btn">CLEAR</button>
