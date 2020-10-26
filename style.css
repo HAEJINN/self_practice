@@ -673,6 +673,25 @@ body {
   .address-desc {
     padding-left: 40px;
   }
+
+  /* Footer */
+  .footer-content {
+    padding: 60px 40px 50px 40px;
+  }
+
+  .copyright-list {
+    flex-direction: row;
+  }
+
+  .copyright-list li:first-child::after,
+  .copyright-list li:nth-child(2)::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 0.8em;
+    background-color: #9c9c9c;
+    margin: 0 15px;
+  }
 }
 
 /* Pc CSS */
@@ -807,5 +826,10 @@ body {
   .contact-card span,
   .contact-card p {
     font-size: 19px;
+  }
+
+  /* Footer */
+  .footer-content {
+    padding-left: 50px;
   }
 }
