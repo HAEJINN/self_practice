@@ -473,6 +473,99 @@ body {
   margin-right: 20px;
 }
 
+/* Footer */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #242943;
+  border-top: dotted 1px rgba(212, 212, 255, 0.1);
+  padding: 40px 20px 40px 20px;
+}
+
+.icon-list {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.icon-list li {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.icon-list span {
+  position: absolute;
+  z-index: -1000;
+}
+
+.icon-list li:first-child a::before {
+  content: "";
+  display: block;
+  background-image: url(assets/twitter.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-list li:nth-child(2) a::before {
+  content: "";
+  display: block;
+  background-image: url(assets/facebook.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-list li:nth-child(3) a::before {
+  content: "";
+  display: block;
+  background-image: url(assets/instagram.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-list li:nth-child(4) a::before {
+  content: "";
+  display: block;
+  background-image: url(assets/tumblr.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-list li:last-child a::before {
+  content: "";
+  display: block;
+  background-image: url(assets/linkedin.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+
+.copyright-list {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #9c9c9c;
+  opacity: 0.5;
+}
+
+.copyright-list a {
+  text-decoration: dotted underline;
+}
+
 /* Tablet CSS */
 @media screen and (min-width: 768px) {
   /* Header */
