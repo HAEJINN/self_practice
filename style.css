@@ -239,9 +239,10 @@ li {
   background-image: url(assets/profile_placeholder.gif);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   width: 90px;
   height: 90px;
-  margin-right: 15px;
+  margin-right: 10px;
   border-radius: 50%;
 }
 
@@ -268,7 +269,6 @@ li {
   font-size: 16px;
   text-align: center;
   line-height: 1.7;
-  padding: 0 10px;
   margin-bottom: 48px;
 }
 
@@ -313,6 +313,8 @@ li {
 
   .main-cards {
     display: flex;
+    margin-right: 5px;
+    justify-content: center;
   }
 
   .main-cards div {
@@ -321,12 +323,62 @@ li {
     width: 33%;
   }
 
+  .main02-cards::before {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    margin-right: 5px;
+  }
+
+  .main02-cards div {
+    padding: 0 5px;
+  }
+
   .main-cards div h4 {
     font-size: 20px;
   }
 
   .main-cards div p {
     font-size: 15px;
+  }
+
+  /* Main02 */
+  .main02-content {
+    margin: 80px 5% 60px;
+  }
+  .main02-title {
+    font-size: 44px;
+  }
+
+  .main02-desc {
+    font-size: 22px;
+  }
+
+  .main02-user {
+    display: flex;
+  }
+
+  .main02-cards {
+    margin: 0;
+    padding: 0;
+    width: 25%;
+  }
+
+  .main02-cards div strong {
+    font-size: 16px;
+  }
+
+  .main02-cards div p {
+    font-size: 14px;
+  }
+
+  .main02-text {
+    font-size: 14px;
+  }
+
+  .main02-btn {
+    width: 300px;
+    font-size: 20px;
   }
 }
 
@@ -407,5 +459,22 @@ li {
 
   .main-cards div {
     margin: 0 20px;
+  }
+
+  /* Main02 */
+  .main02-content {
+    margin: 80px 10% 60px;
+  }
+
+  .main02-cards::before {
+    margin-right: 10px;
+  }
+
+  .main02-text {
+    font-size: 15px;
+  }
+
+  .main02-btn {
+    width: 280px;
   }
 }
