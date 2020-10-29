@@ -203,6 +203,38 @@ li {
   .banner a {
     width: 280px;
   }
+
+  /* Main01 */
+  .main01-content {
+    padding: 90px 50px 60px;
+  }
+
+  .main01-title {
+    font-size: 44px;
+    margin-bottom: 22px;
+  }
+
+  .main01-desc {
+    font-size: 22px;
+  }
+
+  .main-cards {
+    display: flex;
+  }
+
+  .main-cards div {
+    margin: 0 15px;
+    padding: 40px 35px;
+    width: 33%;
+  }
+
+  .main-cards div h4 {
+    font-size: 20px;
+  }
+
+  .main-cards div p {
+    font-size: 15px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -272,5 +304,15 @@ li {
   .banner p {
     font-size: 22px;
     margin-bottom: 38px;
+  }
+
+  /* Main01 */
+  .main01-content {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
+  .main-cards div {
+    margin: 0 20px;
   }
 }
