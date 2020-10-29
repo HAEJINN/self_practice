@@ -59,7 +59,7 @@ li {
 }
 
 .navigation {
-  background-color: white;
+  background-color: #ffffff;
   padding: 20px;
 }
 
@@ -76,7 +76,7 @@ li {
 .signup-btn {
   display: block;
   background-color: #575757;
-  color: white;
+  color: #ffffff;
   margin-top: 30px;
   border-radius: 30px;
   width: 120px;
@@ -275,7 +275,7 @@ li {
 .main02-btn {
   display: block;
   text-align: center;
-  width: 80%;
+  width: 90%;
   background-color: #3cadd4;
   border-radius: 30px;
   color: #ffffff;
@@ -343,6 +343,113 @@ li {
   height: 2.85em;
   border-radius: 30px;
   margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+  background-color: #383b43;
+  color: #ffffff;
+}
+
+.footer-content {
+  padding: 50px 5%;
+}
+
+.links {
+  margin-bottom: 32px;
+}
+
+.links h3 {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.links ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #cdced0;
+  padding: 5px 0;
+}
+
+.links ul li:hover {
+  text-decoration: underline;
+}
+
+.link-list::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #737988;
+  margin: 20px 0 60px;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright-list {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #858585;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.icon-list {
+  display: flex;
+}
+
+.icon-list li {
+  margin: 0 5px;
+}
+
+.icon-list span {
+  position: absolute;
+  z-index: -1000;
+}
+
+.icon-list li:first-child a::before {
+  content: "";
+  display: block;
+  background-image: url(assets/facebook.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+
+.icon-list li:nth-child(2) a::before {
+  content: "";
+  display: block;
+  background-image: url(assets/twitter.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+
+.icon-list li:nth-child(3) a::before {
+  content: "";
+  display: block;
+  background-image: url(assets/instagram.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+
+.icon-list li:last-child a::before {
+  content: "";
+  display: block;
+  background-image: url(assets/linkedin.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -476,6 +583,30 @@ li {
   .submit-btn {
     width: 240px;
   }
+
+  /* Footer */
+  .footer-content {
+    padding: 70px 10%;
+  }
+
+  .link-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .links {
+    width: 50%;
+    padding-left: 5%;
+  }
+
+  .copyright-list {
+    display: flex;
+  }
+
+  .copyright-list li {
+    margin: 0 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -488,7 +619,7 @@ li {
     z-index: 1;
     top: 20px;
     left: 30px;
-    color: white;
+    color: #ffffff;
     font-size: 20px;
   }
 
@@ -589,5 +720,39 @@ li {
 
   .forms-desc {
     min-width: 670px;
+  }
+
+  /* Footer */
+  .footer-content {
+    padding: 90px 80px;
+  }
+
+  .link-list {
+    min-width: 1040px;
+    max-width: 1300px;
+  }
+
+  .links {
+    width: 25%;
+    padding: 0;
+  }
+
+  .links h3 {
+    font-size: 20px;
+  }
+
+  .links ul li {
+    font-size: 15px;
+  }
+
+  .footer-list {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .copyright-list {
+    margin-bottom: 0;
   }
 }
