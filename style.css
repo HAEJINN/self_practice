@@ -106,3 +106,53 @@ header {
 .nav-a:hover::before {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23f2849e%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E");
 }
+
+@media screen and (min-width: 768px) {
+  header {
+    padding-top: 128px;
+  }
+
+  .header-content {
+    padding: 0 40px;
+  }
+
+  .nav {
+    top: 30px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrap {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  header {
+    padding-top: 150px;
+  }
+
+  .header-content {
+    padding: 0 50px;
+  }
+
+  .logo {
+    width: 38px;
+    height: 38px;
+  }
+
+  .header-title {
+    font-size: 18px;
+  }
+
+  .nav {
+    top: 40px;
+    right: 50px;
+    width: 55px;
+    height: 55px;
+    padding: 10px;
+  }
+}
