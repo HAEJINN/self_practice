@@ -291,12 +291,13 @@ footer {
 .email-input,
 .form-content textarea {
   border: none;
-  border-bottom: 1px solid #505050;
+  border-bottom: 1px solid rgba(88, 88, 88, 0.5);
   width: 100%;
   height: 3em;
-  margin-bottom: 20px;;
-  color: #505050;
+  margin-bottom: 20px;
+  color: rgba(88, 88, 88, 0.5);
   font-size: 12pt;
+  background-color: inherit;
 }
 
 .name-input:focus,
@@ -337,6 +338,7 @@ footer {
 }
 
 @media screen and (min-width: 540px) {
+  /* Main */
   .card-set {
     display: flex;
     flex-direction: row;
@@ -357,6 +359,44 @@ footer {
     font-size: 15px;
   }
 
+  /* Footer */
+  .footer-content {
+    padding: 50px;
+  }
+
+  .name-input,
+  .email-input {
+    width: calc(50% - 8px);
+    height: 4em;
+  }
+
+  .name-input {
+    margin-right: 10px;
+  }
+
+  .form-content textarea {
+    height: 4em;
+    margin-bottom: 2.5em;
+  }
+
+  .sub-btn {
+    width: 25%;
+  }
+
+  .copyright {
+    flex-direction: row;
+  }
+
+  .copyright span:first-child::after,
+  .copyright span:nth-child(2)::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 1em;
+    background-color: rgba(88, 88, 88, 0.3);
+    margin: 0 0.8em;
+  }
+}
 @media screen and (min-width: 768px) {
   header {
     padding-top: 128px;
@@ -383,10 +423,44 @@ footer {
     font-size: 44px;
     margin-bottom: 44px;
   }
+
+  /* Footer */
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer-title {
+    margin-bottom: 32px;
+  }
+
+  .icon-content {
+    order: 2;
+    width: calc(30% - 10px);
+  }
+
+  .form-wrap {
+    order: 1;
+    width: calc(70% - 10px);
+    margin-right: 20px;
+  }
+
+  .copyright {
+    width: 100%;
+    order: 3;
+  }
 }
 
 @media screen and (min-width: 900px) {
-  .wrap {
+  /* .wrap {
+    max-width: 95%;
+    margin: 0 auto;
+  } */
+
+  header,
+  main,
+  .footer-content {
     max-width: 95%;
     margin: 0 auto;
   }
@@ -407,10 +481,47 @@ footer {
   .card-desc {
     font-size: 16px;
   }
+
+  /* Footer */
+  .footer-content {
+    padding: 80px 50px;
+  }
+
+  .icon-content {
+    width: calc(30% - 30px);
+  }
+
+  .form-wrap {
+    width: calc(70% - 30px);
+    margin-right: 60px;
+  }
+
+  .name-input,
+  .email-input {
+    font-size: 16px;
+    height: 5em;
+  }
+
+  .form-content textarea {
+    height: 4em;
+    margin-bottom: 3em;
+  }
+
+  .sub-btn {
+    width: 15%;
+    margin-bottom: 5em;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .wrap {
+  /* .wrap {
+    max-width: 85%;
+    margin: 0 auto;
+  } */
+
+  header,
+  main,
+  .footer-content {
     max-width: 85%;
     margin: 0 auto;
   }
@@ -458,5 +569,17 @@ footer {
 
   .main-desc {
     font-size: 18px;
+  }
+
+  /* Footer */
+  .footer-content {
+    padding: 90px 60px 140px;
+  }
+
+  .icon-list li a::before {
+    width: 3.5em;
+    height: 3.5em;
+    padding: 0.5em;
+    margin-right: 4px;
   }
 }
