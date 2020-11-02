@@ -240,6 +240,102 @@ header {
   transform: translateY(-5px);
 }
 
+/* Footer */
+footer {
+  background-color: #f6f6f6;
+}
+
+.footer-content {
+  padding: 20px 40px;
+}
+
+.footer-title {
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 0.35em;
+  margin-bottom: 16px;
+}
+
+.icon-list {
+  margin-bottom: 25px;
+}
+
+.icon-list li {
+  display: inline-block;
+}
+
+.icon-list li a::before {
+  content: "";
+  display: inline-block;
+  background-image: url("assets/heart-b.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 2.5em;
+  height: 2.5em;
+  padding: 0.3em;
+  margin-right: 2px;
+}
+
+.icon-list li a:hover::before {
+  background-image: url("assets/heart-r.png");
+}
+
+.icon-name {
+  position: absolute;
+  z-index: -1000;
+  visibility: hidden;
+}
+
+.name-input,
+.email-input,
+.form-content textarea {
+  border: none;
+  border-bottom: 1px solid #505050;
+  width: 100%;
+  height: 3em;
+  margin-bottom: 20px;;
+  color: #505050;
+  font-size: 12pt;
+}
+
+.name-input:focus,
+.email-input:focus,
+.form-content textarea:focus {
+  border-bottom: 2px solid #f2849e;
+}
+
+.sub-btn {
+  width: 100%;
+  background-color: #585858;
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.8em;
+  letter-spacing: 0.35em;
+  line-height: 3.45;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 4em;
+}
+
+.sub-btn:hover {
+  background-color: #f2849e;
+  transition: background-color 300ms ease-in-out;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  color: rgba(88, 88, 88, 0.5);
+  font-size: 0.8em;
+}
+
+.copyright span {
+  margin-bottom: 1em;
+}
+
 @media screen and (min-width: 540px) {
   .card-set {
     display: flex;
@@ -260,7 +356,6 @@ header {
   .card-desc {
     font-size: 15px;
   }
-}
 
 @media screen and (min-width: 768px) {
   header {
@@ -291,6 +386,11 @@ header {
 }
 
 @media screen and (min-width: 900px) {
+  .wrap {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
   .title-br {
     display: inline;
   }
@@ -311,7 +411,7 @@ header {
 
 @media screen and (min-width: 1200px) {
   .wrap {
-    max-width: 95%;
+    max-width: 85%;
     margin: 0 auto;
   }
 
@@ -351,6 +451,7 @@ header {
   }
 
   .main-title {
+    min-width: 950px;
     font-size: 53px;
     line-height: 1.3;
   }
