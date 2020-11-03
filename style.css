@@ -66,7 +66,7 @@ h3 {
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 /* Header */
@@ -113,6 +113,7 @@ header {
 
 /* Main */
 main {
+  position: relative;
   background-color: #ffffff;
   text-align: center;
 }
@@ -216,6 +217,7 @@ nav {
 
 .sec-03-list li span {
   color: #ffffff;
+  font-weight: 300;
 }
 
 .sec-03-list li:first-child {
@@ -445,5 +447,128 @@ footer span {
 
   .footer-dl {
     line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  br {
+    display: inline;
+  }
+
+  /* Header */
+  header {
+    padding: 5em 3em 2em 3em;
+  }
+
+  .header-title {
+    font-size: 3.25em;
+  }
+
+  .header-title::before {
+    width: 1.6em;
+    height: 1.6em;
+  }
+
+  .header-desc {
+    font-size: 1.2em;
+    line-height: 1.8;
+  }
+
+  /* Main */
+  nav {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1em;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 0 2em;
+  }
+
+  .sec-01 {
+    padding: 8em 3em 2em 3em;
+  }
+
+  .sec-02,
+  .sec-03,
+  .sec-04 {
+    padding: 4em 3em 2em 3em;
+  }
+
+  .sec-01-img {
+    width: 15em;
+  }
+
+  .sec-01-title,
+  .sec-02-title,
+  .sec-03-title,
+  .sec-04-title {
+    font-size: 2em;
+  }
+
+  .card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cards {
+    padding: 1.5em;
+    width: 50%;
+  }
+
+  .sec-03-desc,
+  .sec-04-desc {
+    font-size: 1.25em;
+  }
+
+  .sec-03-list {
+    flex-direction: row;
+    max-width: 100%;
+  }
+
+  .sec-03-list li {
+    width: 20%;
+  }
+
+  .sec-03-list li::before {
+    width: 3em;
+    height: 3em;
+    margin: 0 auto 0.5em;
+  }
+
+  .sec-03-list li strong {
+    font-size: 1.5em;
+  }
+
+  .sec-03-list li span {
+    font-size: 0.9em;
+  }
+
+  .sec-03-text {
+    columns: 20em 2;
+    column-gap: 2em;
+  }
+
+  /* Footer */
+  footer {
+    padding: 4em 3em 2em 3em;
+  }
+
+  .footer-desc {
+    line-height: 1.8;
+    letter-spacing: 0.01em;
   }
 }
