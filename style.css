@@ -254,3 +254,121 @@ nav {
 .btn-plus:hover {
   opacity: 0.9;
 }
+
+/* Footer */
+
+footer {
+  padding: 3em 1.2em 6em 1.5em;
+}
+
+.footer-title,
+.footer-dl dt {
+  color: #ffffff;
+}
+
+.footer-desc,
+.footer-dl dd,
+footer a,
+footer span {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-desc {
+  margin-bottom: 2em;
+}
+
+.footer-btn {
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer-dl {
+  margin-bottom: 3em;
+}
+
+.footer-dl dt {
+  display: block;
+  width: 3em;
+  margin: 0;
+  clear: left;
+  float: left;
+}
+
+.footer-dl dd {
+  margin: 0 0 0.85em 5.5em;
+  font-weight: 300;
+}
+
+.footer-dl dd a {
+  border-bottom: 1px dotted #ffffff;
+}
+
+.footer-dl dd a:hover {
+  border-bottom: none;
+  color: #ffffff;
+  transition: color 300ms ease-in-out;
+}
+
+.icon-list {
+  display: flex;
+  margin-bottom: 3em;
+}
+
+.icon-name {
+  position: absolute;
+  z-index: -1000;
+  visibility: hidden;
+}
+
+.icon-list li:first-child a::before {
+  content: "";
+  display: block;
+  background-image: url(assets/twitter.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 2em;
+  height: 2em;
+  padding: 0.5em;
+  margin-right: 0.8em;
+}
+
+.icon-list li:nth-child(2) a::before {
+  content: "";
+  display: block;
+  background-image: url(assets/facebook.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 2em;
+  height: 2em;
+  padding: 0.5em;
+  margin-right: 0.8em;
+}
+
+.icon-list li:nth-child(3) a::before {
+  content: "";
+  display: block;
+  background-image: url(assets/instagram.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 2em;
+  height: 2em;
+  padding: 0.5em;
+  margin-right: 0.8em;
+}
+
+.icon-list li:last-child a::before {
+  content: "";
+  display: block;
+  background-image: url(assets/linkedin.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 2em;
+  height: 2em;
+  padding: 0.5em;
+}
+
+.coryright {
+  opacity: 0.7;
+  font-size: 0.8em;
+  line-height: 1;
+}
