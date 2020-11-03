@@ -372,3 +372,78 @@ footer span {
   font-size: 0.8em;
   line-height: 1;
 }
+
+@media screen and (min-width: 360px) {
+  .wrap {
+    max-width: calc(100% - 4em);
+    margin: 0 auto;
+    font-size: 16px;
+  }
+
+  /* Header */
+  header {
+    padding: 4em 2em 1em 2em;
+  }
+
+  .header-title::before {
+    width: 2.2em;
+    height: 2.2em;
+  }
+
+  .header-desc {
+    letter-spacing: 0;
+  }
+
+  /* Main */
+  main {
+    border-radius: 5px;
+  }
+
+  .sec-01,
+  .sec-02,
+  .sec-03,
+  .sec-04 {
+    padding: 3em 2em 1em 2em;
+  }
+
+  .btn {
+    width: 8em;
+    line-height: 2.5em;
+    margin: 0 auto 2em;
+  }
+
+  .sec-03-list {
+    max-width: 22em;
+    margin: 0 auto 2em auto;
+  }
+
+  .btn-wrap {
+    display: flex;
+    margin-bottom: 2em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-wrap .btn {
+    margin: 0;
+  }
+  .btn-wrap .btn-plus {
+    margin-right: 1em;
+  }
+
+  /* Footer */
+
+  footer {
+    padding: 3em 2em 1em 2em;
+    margin-bottom: 5em;
+  }
+
+  .footer-btn {
+    margin-left: 0;
+    margin-bottom: 3em;
+  }
+
+  .footer-dl {
+    line-height: 1.5;
+  }
+}
