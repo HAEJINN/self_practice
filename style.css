@@ -43,6 +43,7 @@ body {
 
 /* Header */
 .header {
+  position: relative;
   width: 100%;
   background-image: url(assets/banner.jpg);
   background-repeat: no-repeat;
@@ -113,6 +114,28 @@ body {
   background-image: url(assets/arrow-hover.png);
 }
 
+/* Nav */
+.nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 1em 0 0;
+}
+
+.nav a span {
+  display: none;
+  margin-right: 0.5em;
+}
+
+.nav a img {
+  width: 2em;
+}
 /* Main-01 */
 
 .one {
@@ -595,6 +618,14 @@ body {
   .start-btn {
     font-size: 13px;
     padding: 15px;
+  }
+
+  /* Nav */
+  .nav a span {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 600;
   }
 
   /* Main-01 */
