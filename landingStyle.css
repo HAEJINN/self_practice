@@ -148,6 +148,124 @@ main {
   text-align: center;
 }
 
+/* Contact */
+.contact {
+  background-color: #2a2f4a;
+}
+
+.inner {
+  padding: 3em 0 0 0;
+}
+
+.contact-content {
+  width: calc(100% - 3em);
+  margin: auto;
+  margin-bottom: 2em;
+}
+
+.name-part,
+.email-part,
+.textarea-part {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-part label,
+.email-part label,
+.textarea-part label {
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  margin: 0 0 1em 0;
+}
+
+.name-part input,
+.email-part input,
+.textarea-part textarea {
+  font-size: 1em;
+  background-color: #303554;
+  color: #ffffff;
+  margin: 0 0 2em 0;
+  border: none;
+  line-height: 1.5em;
+  padding: 0.5em 1em;
+}
+
+.name-part input:focus,
+.email-part input:focus,
+.textarea-part textarea:focus {
+  border: 2px solid #8bdadc;
+}
+
+.submit-btn {
+  width: 160px;
+  height: 40px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  background-color: #ffffff;
+  border: none;
+  color: #242943;
+  margin-right: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #8bdadc;
+}
+
+.reset-btn {
+  width: 100px;
+  height: 40px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  background-color: #242943;
+  border: 2px solid #ffffff;
+}
+
+.reset-btn:hover {
+  border-color: #8bdadc;
+  color: #8bdadc;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-card section {
+  display: flex;
+  padding: 2.5em 0;
+  border-bottom: 1px solid #485383;
+}
+
+.contact-card section::before {
+  content: "";
+  display: block;
+  background-image: url(./assets/mail.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 2em;
+  height: 2em;
+  margin-left: 1.5em;
+  margin-right: 1em;
+}
+
+.email-wrap h3,
+.phone-wrap h3,
+.address-wrap h3 {
+  line-height: 1.65;
+  margin-bottom: 0.5em;
+}
+
+.email-wrap a,
+.phone-wrap span,
+.address-wrap p {
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
 @media screen and (min-width: 768px) {
   /* Header */
   header {
