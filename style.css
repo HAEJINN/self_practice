@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Reset CSS */
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font-family: "Work Sans", sans-serif;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  outline: none;
+  box-shadow: none;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* Header */
+header {
+  display: none;
+}
+
+/* Main */
+.main-content {
+  width: 85%;
+  margin: 3em auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.column01,
+.column02,
+.column03,
+.column04 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.imageL {
+  width: 100%;
+  height: 15%;
+  border-radius: 5px;
+  margin: 0.5em 0;
+  overflow: hidden;
+}
+
+.imageP {
+  width: 100%;
+  height: 30%;
+  border-radius: 5px;
+  margin: 0.5em 0;
+  overflow: hidden;
+}
+
+.imageL a,
+.imageP a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.imageL a img,
+.imageP a img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Footer */
+footer {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+  .main-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .column01,
+  .column02,
+  .column03,
+  .column04 {
+    width: 50%;
+    height: 50%;
+  }
+
+  .column01 {
+    order: 1;
+  }
+
+  .column02 {
+    order: 3;
+  }
+
+  .column03 {
+    order: 2;
+  }
+
+  .column04 {
+    order: 4;
+  }
+
+  .imageL,
+  .imageP {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 736px) {
+}
