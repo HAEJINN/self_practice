@@ -148,6 +148,11 @@ main {
   text-align: center;
 }
 
+.btn-color:hover {
+  border-color: #8bdadc;
+  color: #8bdadc;
+}
+
 /* Contact */
 .contact {
   background-color: #2a2f4a;
