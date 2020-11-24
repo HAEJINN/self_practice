@@ -5,7 +5,6 @@
 
 /* Reset CSS */
 body {
-  position: relative;
   font-family: "Work Sans", sans-serif;
   font-size: 14px;
 }
@@ -54,7 +53,6 @@ li {
   width: 6em;
   height: 6em;
   z-index: 10;
-  cursor: pointer;
 }
 
 .header-btn span {
@@ -77,46 +75,6 @@ li {
 
 .header-wrap {
   display: none;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.7);
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-  font-weight: 300;
-}
-
-.header-circle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #e74c3c;
-  border: 0.7em solid #ffffff;
-  border-radius: 50%;
-  width: 18em;
-  height: 18em;
-  color: #ffffff;
-}
-
-.header-circle h1 {
-  font-family: "Pattaya", sans-serif;
-  font-size: 3em;
-  font-weight: 300;
-  margin-bottom: 0.2em;
-}
-
-.header-circle p {
-  margin-bottom: 2em;
-}
-
-.header-circle a span {
-  background-color: #ffffff;
-  color: #e74c3c;
-  border-radius: 30px;
-  margin: 0;
-  padding: 0.5em 1.5em;
-  font-weight: 600;
 }
 
 /* Main */
@@ -306,27 +264,6 @@ footer p {
 }
 
 @media screen and (min-width: 480px) {
-  .header-circle {
-    width: 28em;
-    height: 28em;
-  }
-  .header-circle h1 {
-    font-size: 3.5em;
-    margin-bottom: 0.5em;
-  }
-
-  .header-circle p {
-    margin-bottom: 3em;
-    font-size: 1.3em;
-  }
-
-  .header-circle a span {
-    font-size: 1.2em;
-    margin: 0;
-    padding: 0.8em 2em;
-  }
-
-  /* Main */
   .main-content {
     width: 90%;
     flex-direction: row;
@@ -376,27 +313,6 @@ footer p {
 }
 
 @media screen and (min-width: 768px) {
-  .header-circle {
-    width: 35em;
-    height: 35em;
-  }
-
-  .header-circle h1 {
-    font-size: 5em;
-    margin-bottom: 0.7em;
-  }
-
-  .header-circle p {
-    margin-bottom: 3.5em;
-    font-size: 1.5em;
-  }
-
-  .header-circle a span {
-    font-size: 1.3em;
-    margin: 0;
-    padding: 1em 2.2em;
-  }
-
   /* Footer */
   .header-btn {
     transform: translateX(-4em) translateY(-4em);
@@ -412,28 +328,6 @@ footer p {
 }
 
 @media screen and (min-width: 960px) {
-  /* Header */
-  .header-circle {
-    width: 40em;
-    height: 40em;
-    border-width: 1em;
-  }
-
-  .header-circle h1 {
-    font-size: 6em;
-    margin-bottom: 0.5em;
-  }
-
-  .header-circle p {
-    margin-bottom: 3.5em;
-    font-size: 1.6em;
-  }
-
-  .header-circle a span {
-    padding: 1em 2.5em;
-  }
-
-  /* Main */
   .main-content {
     flex-wrap: nowrap;
     width: 95%;
