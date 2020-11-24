@@ -1,6 +1,6 @@
 var homeBtn = document.getElementById("headerbutton");
 var circle =  document.getElementById("headerwrap");
-var goBtn = document.getElementById("go-btn");
+var goBtn = document.getElementById("go-btn")
 
 
 homeBtn.addEventListener('click',function(){
@@ -26,7 +26,7 @@ if(screen.width>=960){
       footer.style.bottom= "0";
       footer.style.height= "0";
       // footer.style.left= "50%";
-      // footer.style.transform= "translateX(-2em)";
+      //footer.style.transform= "translateX(-2em)";
       // footerWrap.style.position= "absolute";
       // footerWrap.style.bottom= "0";
       footerWrap.style.visibility= "hidden";
@@ -35,8 +35,8 @@ if(screen.width>=960){
     else {
       footer.style.bottom= "0";
       footerWrap.style.visibility= "visible";
-      footer.style.height= "auto";
       onoff= 1;
+      footer.style.height= "auto";
     }
   });
 }
