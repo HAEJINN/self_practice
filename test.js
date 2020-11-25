@@ -15,6 +15,9 @@ goBtn.addEventListener('click', function(){
   headerBtn.classList.add("header-btn-disappear");
   startP.classList.remove("start-circle");
   startP.classList.add("header-wrap");
+  // if(window.location.href.split("/") !== "index.html"){
+  //   window.location.href= "index.html";
+  // };
 });
 
 var footerBtn = document.querySelector("footer");

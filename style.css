@@ -486,7 +486,7 @@ footer p {
   /* Footer */
   footer {
     position: fixed;
-    bottom: 0;
+    bottom: 0em;
   }
 
   .footer-btn {
