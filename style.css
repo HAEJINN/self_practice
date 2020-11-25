@@ -97,9 +97,24 @@ li {
   align-items: center;
   width: 100%;
   height: 100vh;
+  color: #ffffff;
   background-color: rgba(255, 255, 255, 0.7);
   z-index: 10;
   text-align: center;
+  opacity: 0;
+  animation-name: showCircle;
+  animation-duration: 400ms;
+  animation-delay: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showCircle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .start-circle div {
@@ -108,9 +123,29 @@ li {
   justify-content: center;
   align-items: center;
   background-color: #e74c3c;
+  border: 0.5em solid rgba(255, 255, 255, 0.9);
   border-radius: 50%;
-  width: 15em;
-  height: 15em;
+  width: 20em;
+  height: 20em;
+  font-weight: 300;
+}
+
+.start-circle div h1 {
+  font-family: "Pattaya", sans-serif;
+  font-weight: 300;
+  font-size: 3em;
+  margin-bottom: 0.3em;
+}
+
+.start-circle div p {
+  margin-bottom: 2em;
+}
+.start-circle div a {
+  font-weight: 400;
+  background-color: #ffffff;
+  color: #e74c3c;
+  padding: 0.8em 2em;
+  border-radius: 50px;
 }
 
 /* Main */
@@ -300,6 +335,28 @@ footer p {
 }
 
 @media screen and (min-width: 480px) {
+  /* Header */
+  .start-circle div {
+    width: 28em;
+    height: 28em;
+    border-width: 1em;
+  }
+
+  .start-circle div h1 {
+    font-size: 4em;
+    margin-bottom: 0.5em;
+  }
+
+  .start-circle div p {
+    font-size: 1.2em;
+    margin-bottom: 2.5em;
+  }
+  .start-circle div a {
+    font-size: 1.2em;
+    padding: 1em 3em;
+  }
+
+  /* Main */
   .main-content {
     width: 90%;
     flex-direction: row;
@@ -349,7 +406,20 @@ footer p {
 }
 
 @media screen and (min-width: 768px) {
-  /* Footer */
+  /* Header */
+  .start-circle div {
+    width: 32em;
+    height: 32em;
+  }
+
+  .start-circle div p {
+    font-size: 1.4em;
+  }
+  .start-circle div a {
+    font-size: 1.2em;
+    padding: 1em 3em;
+  }
+
   .header-btn {
     transform: translateX(-4em) translateY(-4em);
     width: 8em;
@@ -364,6 +434,23 @@ footer p {
 }
 
 @media screen and (min-width: 960px) {
+  /* Header */
+  .start-circle div {
+    width: 38em;
+    height: 38em;
+    border-width: 1.2em;
+  }
+
+  .start-circle div h1 {
+    font-size: 5em;
+  }
+
+  .start-circle div p {
+    font-size: 1.6em;
+    margin-bottom: 2.2em;
+  }
+
+  /* Main */
   .main-content {
     flex-wrap: nowrap;
     width: 95%;
@@ -398,7 +485,8 @@ footer p {
 
   /* Footer */
   footer {
-    position: relative;
+    position: fixed;
+    bottom: 0;
   }
 
   .footer-btn {
@@ -412,6 +500,7 @@ footer p {
     height: 4em;
     background-color: #e74c3c;
     border-radius: 50px;
+    cursor: pointer;
   }
 
   .footer-btn span {
@@ -429,15 +518,14 @@ footer p {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    margin-top: 0.5em;
-    margin-left: 1.2em;
+    margin: 0.5em auto 0;
   }
 
   .footer-wrap {
     flex-direction: row;
     align-items: flex-start;
     text-align: left;
-    padding: 2em 5em;
+    padding: 1em 5em;
   }
 
   .footer-desc {
