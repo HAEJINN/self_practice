@@ -48,9 +48,41 @@ li {
 
 /* Header */
 .header {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  position: fixed;
+  top: 0;
+  left: -15em;
+  width: 15em;
+  height: 100vh;
+}
+
+.header-show {
+  animation-name: menu-show;
+  animation-duration: 800ms;
+  animation-fill-mode: forwards;
+}
+
+.header-close {
+  animation-name: menu-close;
+  animation-duration: 800ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes menu-show {
+  from {
+    left: -15em;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes menu-close {
+  from {
+    left: 0;
+  }
+  to {
+    left: -15em;
+  }
 }
 
 .logo {
@@ -58,9 +90,28 @@ li {
   z-index: -1000;
 }
 
+.menu-btn {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  width: 3em;
+  height: 2.5em;
+  background-color: #858585;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.menu-btn img {
+  display: block;
+  width: 2em;
+  height: 100%;
+  margin: auto;
+}
+
 .navigation {
+  height: 100%;
   background-color: #ffffff;
-  padding: 20px;
+  padding: 10em 2em;
 }
 
 .navigation ul li:nth-child(2)::before,
@@ -613,6 +664,7 @@ li {
   /* Header */
   .header {
     width: 100%;
+    left: 0;
   }
 
   .logo {
@@ -625,6 +677,10 @@ li {
 
   .logo:hover {
     text-decoration: underline;
+  }
+
+  .menu-btn {
+    visibility: hidden;
   }
 
   .navigation {
