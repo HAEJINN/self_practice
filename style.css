@@ -114,18 +114,40 @@ header {
   display: block;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -26.5em;
   width: 20em;
   height: 100vh;
   background-color: #585858;
   color: #ffffff;
   z-index: 10;
   padding: 2.5em;
+  transition: right 1000ms;
 }
 
-/* .navi::before {
-  content: "";
-} */
+.navi-visible {
+  right: 0;
+}
+
+.navi-invisible {
+  right: -26.5em;
+}
+
+.close-btn {
+  display: block;
+  position: absolute;
+  background-image: url(./assets/close-b.png);
+  background-size: cover;
+  background-position: center center;
+  width: 3em;
+  height: 3em;
+  top: 1em;
+  left: -3.5em;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background-image: url(./assets/close-p.png);
+}
 
 .navi-title {
   font-size: 1.5em;
