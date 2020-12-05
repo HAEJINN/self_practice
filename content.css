@@ -1,0 +1,71 @@
+/* Main */
+main {
+  width: 95%;
+  margin: auto;
+}
+
+main h1 {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+.main-pic {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+main p {
+  margin-bottom: 1em;
+  line-height: 1.7;
+}
+
+.main-text {
+  margin-bottom: 2em;
+}
+
+@media screen and (min-width: 540px) {
+  main {
+    width: 90%;
+  }
+
+  main h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    width: 85%;
+  }
+
+  main h1 {
+    font-size: 2.2em;
+  }
+
+  main p {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    width: 80%;
+  }
+
+  main h1 {
+    font-size: 2.5em;
+  }
+
+  .main-pic {
+    margin-bottom: 2em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    width: 75%;
+  }
+
+  main h1 {
+    font-size: 2.8em;
+  }
+}
